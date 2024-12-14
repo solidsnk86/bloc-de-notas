@@ -1,4 +1,4 @@
-# Bloc de Notas con Qt y C++
+# Bloc de Notas con Qt v15.0.0 y C++ 
 
 ## Descripción
 Un bloc de notas funcional desarrollado con Qt y C++, que ofrece una completa suite de herramientas de edición de texto.
