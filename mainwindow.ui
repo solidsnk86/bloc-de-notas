@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>349</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="font">
+        <font>
+         <family>Menlo</family>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::FocusPolicy::StrongFocus</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNote_Pad_C">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionNuevo"/>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar_como"/>
+    <addaction name="actionImprimir"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuOpciones">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+    <addaction name="actionCopiar"/>
+    <addaction name="actionPegar"/>
+    <addaction name="actionCortar"/>
+    <addaction name="actionDeshacer"/>
+    <addaction name="actionRehacer"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionL_eme"/>
+    <addaction name="actionVersi_n"/>
+   </widget>
+   <addaction name="menuNote_Pad_C"/>
+   <addaction name="menuOpciones"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNuevo"/>
+   <addaction name="actionAbrir"/>
+   <addaction name="actionGuardar_como"/>
+   <addaction name="actionImprimir"/>
+   <addaction name="actionCopiar"/>
+   <addaction name="actionPegar"/>
+   <addaction name="actionDeshacer"/>
+   <addaction name="actionRehacer"/>
+  </widget>
+  <action name="actionNuevo">
+   <property name="icon">
+    <iconset resource="build/Resources.qrc">
+     <normaloff>:/icons/agregar-carpeta.png</normaloff>:/icons/agregar-carpeta.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="build/Resources.qrc">
+     <normaloff>:/icons/carpeta-abierta.png</normaloff>:/icons/carpeta-abierta.png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionGuardar_como">
+   <property name="icon">
+    <iconset resource="build/Resources.qrc">
+     <normaloff>:/icons/disco-flexible.png</normaloff>:/icons/disco-flexible.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar como</string>
+   </property>
+  </action>
+  <action name="actionImprimir">
+   <property name="icon">
+    <iconset resource="build/Resources.qrc">
+     <normaloff>:/icons/imprimir.png</normaloff>:/icons/imprimir.png</iconset>
+   </property>
+   <property name="text">
+    <string>Imprimir</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="build/Resources.qrc">
+     <normaloff>:/icons/salida.png</normaloff>:/icons/salida.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="icon">
+    <iconset resource="build/Resources.qrc">
+     <normaloff>:/icons/copiar.png</normaloff>:/icons/copiar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+  </action>
+  <action name="actionPegar">
+   <property name="icon">
+    <iconset resource="build/Resources.qrc">
+     <normaloff>:/icons/pegar-como-texto.png</normaloff>:/icons/pegar-como-texto.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pegar</string>
+   </property>
+  </action>
+  <action name="actionCortar">
+   <property name="icon">
+    <iconset resource="build/Resources.qrc">
+     <normaloff>:/icons/cortar-con-tijeras.png</normaloff>:/icons/cortar-con-tijeras.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cortar</string>
+   </property>
+  </action>
+  <action name="actionDeshacer">
+   <property name="icon">
+    <iconset resource="build/Resources.qrc">
+     <normaloff>:/icons/deshacer.png</normaloff>:/icons/deshacer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Deshacer</string>
+   </property>
+  </action>
+  <action name="actionRehacer">
+   <property name="icon">
+    <iconset resource="build/Resources.qrc">
+     <normaloff>:/icons/rehacer.png</normaloff>:/icons/rehacer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rehacer</string>
+   </property>
+  </action>
+  <action name="actionL_eme">
+   <property name="icon">
+    <iconset resource="build/Resources.qrc">
+     <normaloff>:/icons/informacion.png</normaloff>:/icons/informacion.png</iconset>
+   </property>
+   <property name="text">
+    <string>Acerca</string>
+   </property>
+  </action>
+  <action name="actionVersi_n">
+   <property name="text">
+    <string>Versión</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="build/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
