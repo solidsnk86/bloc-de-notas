@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     }
 
     MainWindow w;
-    w.setWindowTitle("Bloc de Notas con C++ & QT");
+    w.setWindowTitle("Bloc de Notas QT");
     w.setWindowIcon(QIcon(":/icons/cuaderno.png"));
     w.show();
     return a.exec();
