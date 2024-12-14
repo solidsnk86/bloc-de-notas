@@ -70,31 +70,25 @@ void MainWindow::on_actionExit_triggered()
     QApplication::quit();
 }
 
-
 void MainWindow::on_actionCopiar_triggered()
 {
     ui->textEdit->copy();
 }
-
 
 void MainWindow::on_actionPegar_triggered()
 {
     ui->textEdit->paste();
 }
 
-
 void MainWindow::on_actionCortar_triggered()
 {
     ui->textEdit->cut();
 }
 
-
 void MainWindow::on_actionDeshacer_triggered()
 {
     ui->textEdit->undo();
 }
-
-
 
 void MainWindow::on_actionRehacer_triggered()
 {
@@ -106,7 +100,6 @@ void MainWindow::on_actionVersi_n_triggered()
 {
     QMessageBox::about(this, "Versión del programa", "Versión 1.0.0 | Creado el 14 de Diciembre del 2024");
 }
-
 
 void MainWindow::on_actionAcerca_triggered()
 {
@@ -120,4 +113,14 @@ void MainWindow::on_actionAcerca_triggered()
     QMessageBox::about(this, "Acerca", acercaTexto);
 }
 
+void MainWindow::on_actionFuente_triggered()
+{
+    QFont currentFont = ui->textEdit->currentFont();
+
+    bool ok;
+    QFont selectedFont = QFontDialog::getFont(&ok, currentFont, this, "Seleccionar Fuente");
+    if (ok) {
+        ui->textEdit->setFont(currentFont);
+    }
+}
 

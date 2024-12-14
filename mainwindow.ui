@@ -78,11 +78,18 @@
     <property name="title">
      <string>Ayuda</string>
     </property>
-    <addaction name="actionL_eme"/>
+    <addaction name="actionAcerca"/>
     <addaction name="actionVersi_n"/>
+   </widget>
+   <widget class="QMenu" name="menuFormato">
+    <property name="title">
+     <string>Formato</string>
+    </property>
+    <addaction name="actionFuente"/>
    </widget>
    <addaction name="menuNote_Pad_C"/>
    <addaction name="menuOpciones"/>
+   <addaction name="menuFormato"/>
    <addaction name="menuAyuda"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -195,7 +202,7 @@
     <string>Rehacer</string>
    </property>
   </action>
-  <action name="actionL_eme">
+  <action name="actionAcerca">
    <property name="icon">
     <iconset resource="build/Resources.qrc">
      <normaloff>:/icons/informacion.png</normaloff>:/icons/informacion.png</iconset>
@@ -207,6 +214,15 @@
   <action name="actionVersi_n">
    <property name="text">
     <string>Versión</string>
+   </property>
+  </action>
+  <action name="actionFuente">
+   <property name="icon">
+    <iconset resource="build/Resources.qrc">
+     <normaloff>:/icons/fuente.png</normaloff>:/icons/fuente.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fuente</string>
    </property>
   </action>
  </widget>

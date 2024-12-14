@@ -8,6 +8,7 @@
 #include <QMessageBox>
 #include <QtPrintSupport/QPrinter>
 #include <QtPrintSupport/QPrintDialog>
+#include <QFontDialog>
 
 
 QT_BEGIN_NAMESPACE
@@ -45,9 +46,11 @@ private slots:
 
     void on_actionRehacer_triggered();
 
-    void on_actionL_eme_triggered();
-
     void on_actionVersi_n_triggered();
+
+    void on_actionAcerca_triggered();
+
+    void on_actionFuente_triggered();
 
 private:
     Ui::MainWindow *ui;
