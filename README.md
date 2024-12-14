@@ -34,7 +34,9 @@ make
 ```
 
 ## Capturas de Pantalla
-[Próximamente]
+<div align="center">
+<img src="screen-shot-QT.png" width="100%" height="auto" />
+</div>
 
 ## Tecnologías
 - C++
