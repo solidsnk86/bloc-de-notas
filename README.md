@@ -44,8 +44,5 @@ make
 ## Contribuciones
 Contribuciones son bienvenidas. 
 
-## Licencia
-[Tu licencia]
-
 ## Autor
-[Tu nombre]
+Gabriel Calcagni - solidsnk86
