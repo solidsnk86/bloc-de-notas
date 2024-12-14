@@ -9,6 +9,7 @@
 #include <QtPrintSupport/QPrinter>
 #include <QtPrintSupport/QPrintDialog>
 #include <QFontDialog>
+#include <QTextCharFormat>
 
 
 QT_BEGIN_NAMESPACE

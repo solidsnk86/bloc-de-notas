@@ -120,7 +120,16 @@ void MainWindow::on_actionFuente_triggered()
     bool ok;
     QFont selectedFont = QFontDialog::getFont(&ok, currentFont, this, "Seleccionar Fuente");
     if (ok) {
-        ui->textEdit->setFont(currentFont);
+        QTextCharFormat format;
+        format.setFont(selectedFont);
+
+        QTextCursor cursor = ui->textEdit->textCursor();
+        if (cursor.hasSelection()) {
+            cursor.mergeCharFormat(format);
+        } else {
+            cursor.mergeCharFormat(format);
+            ui->textEdit->mergeCurrentCharFormat(format);
+        }
     }
 }
 
