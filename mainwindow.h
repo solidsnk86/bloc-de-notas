@@ -10,6 +10,7 @@
 #include <QtPrintSupport/QPrintDialog>
 #include <QFontDialog>
 #include <QTextCharFormat>
+#include <QRegularExpression>
 
 
 QT_BEGIN_NAMESPACE
@@ -52,6 +53,8 @@ private slots:
     void on_actionAcerca_triggered();
 
     void on_actionFuente_triggered();
+
+    void updateCharacterCount();
 
 private:
     Ui::MainWindow *ui;

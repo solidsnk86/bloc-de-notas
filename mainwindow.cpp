@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     this->setCentralWidget(ui->textEdit);
+
+    connect(ui->textEdit, &QTextEdit::textChanged, this, &MainWindow::updateCharacterCount);
 }
 
 MainWindow::~MainWindow()
@@ -133,3 +135,11 @@ void MainWindow::on_actionFuente_triggered()
     }
 }
 
+void MainWindow::updateCharacterCount()
+{
+    QString text = ui->textEdit->toPlainText();
+    int charCount = text.replace(" ", "").length();
+    int wordCount = text.trimmed().split(QRegularExpression("\\s+"), Qt::SkipEmptyParts).count();
+
+    statusBar()->showMessage(QString("Caracteres: %1").arg(charCount));
+}
