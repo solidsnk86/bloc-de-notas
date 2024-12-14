@@ -102,16 +102,22 @@ void MainWindow::on_actionRehacer_triggered()
 }
 
 
-void MainWindow::on_actionL_eme_triggered()
-{
-    QMessageBox::about(this, "Acerca",
-    "Este es un bloc de notas realizado con el framework QT escrito en lenguaje C++, hecho con 💙 por Gabriel Calcagni. Para más información contáctame a éste correo: calcagni.gabriel86@gmail.com"
-    );
-}
-
-
 void MainWindow::on_actionVersi_n_triggered()
 {
     QMessageBox::about(this, "Versión del programa", "Versión 1.0.0 | Creado el 14 de Diciembre del 2024");
 }
+
+
+void MainWindow::on_actionAcerca_triggered()
+{
+    QString acercaTexto = R"(
+        <p>Este es un bloc de notas realizado con el framework QT escrito en lenguaje C++, hecho con 💙 por Gabriel Calcagni.</p>
+        <p>Para más información, contáctame a este correo:
+        <a href='mailto:calcagni.gabriel86@gmail.com'>calcagni.gabriel86@gmail.com</a></p>
+        <p>Visita mi <a href='https://calcagni-gabriel.vercel.app'>sitio web</a> para más detalles.</p>
+    )";
+
+    QMessageBox::about(this, "Acerca", acercaTexto);
+}
+
 
