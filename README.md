@@ -1,7 +1,7 @@
 # Bloc de Notas con Qt v15.0.0 y C++ 
 
 ## Descripción
-Un bloc de notas funcional desarrollado con Qt y C++, que ofrece una completa suite de herramientas de edición de texto.
+Un bloc de notas funcional desarrollado con Qt y C++, que ofrece herramientas de edición de texto.
 Este proyecto es parte de mi aprendizaje en con nuevos lenguajes como C++ y frameworks como QT 😃.
 
 ## Características
