@@ -105,14 +105,14 @@ void MainWindow::on_actionVersi_n_triggered()
 
 void MainWindow::on_actionAcerca_triggered()
 {
-    QString acercaTexto = R"(
+    QString aboutText = R"(
         <p>Este es un bloc de notas realizado con el framework QT escrito en lenguaje C++, hecho con 💙 por Gabriel Calcagni.</p>
         <p>Para más información, contáctame a este correo:
         <a href='mailto:calcagni.gabriel86@gmail.com'>calcagni.gabriel86@gmail.com</a></p>
         <p>Visita mi <a href='https://calcagni-gabriel.vercel.app'>sitio web</a> para más detalles.</p>
     )";
 
-    QMessageBox::about(this, "Acerca", acercaTexto);
+    QMessageBox::about(this, "Acerca", aboutText);
 }
 
 void MainWindow::on_actionFuente_triggered()
